@@ -1,0 +1,13 @@
+site_name: MyEvents
+
+nav:
+  - Início: index.md
+
+theme: 
+  name: material
+
+markdown_extensions:
+  - pymdownx.tasklist
+  - pymdownx.emoji
+  - pymdownx.mark
+  - pymdownx.tilde
