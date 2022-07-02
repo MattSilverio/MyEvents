@@ -4,4 +4,4 @@ MyEvents é a minha solução de um desafio técnico, elaborado pela MB Labs. A 
 
 # Tecnologias Utilizadas
 
-ReactJS, CSS Modules, React Router, Phosphor Icons
+ReactJS, CSS Modules, React Router, Phosphor Icons, MockFlow, Adobe Colors
