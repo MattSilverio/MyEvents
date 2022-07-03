@@ -5,7 +5,7 @@ MyEvents é a minha solução de um desafio técnico, elaborado pela <a href="ht
 E o deploy do projeto <a href="my-events.vercel.app
 Topics
 Resources
-">AQUI.</a>   :left-arrow:
+">AQUI.</a>   :arrow_left:
 
 # Tecnologias Utilizadas
 
