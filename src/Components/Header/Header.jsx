@@ -1,9 +1,11 @@
 import { MagnifyingGlass } from "phosphor-react"
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 
 import styles from "./style-header.module.css"
 
 export function Header(){
+    const location = useLocation()
+
 
     return(
         <header className={styles.header}>
@@ -11,14 +13,14 @@ export function Header(){
                 <Link to = "/">MyEvents</Link>
             </h1>
 
-            <form>
+           {location.pathname !== "/" && <form>
                 <input 
                     className={styles.searchBar} 
                     type="text" 
                     placeholder="Busque seu evento aqui"   
                 /> 
                 <MagnifyingGlass size={32} color="#F0ECA8"/>
-            </form>
+            </form>}
         </header>
     )
 }

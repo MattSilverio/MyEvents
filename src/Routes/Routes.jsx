@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 
 import Home from "../Screens/Home/Home";
 import Events from "../Screens/Events/Events";
+import { Error } from "../Screens/Error/Error";
 
 
 export function Rts() {
@@ -10,6 +11,7 @@ export function Rts() {
        <Routes>
            <Route element= { <Home /> }  path="/"  />
            <Route element = { <Events/> }  path="/events" />
+           <Route element= {<Error />} path="/*" />
        </Routes>
    )
 }
