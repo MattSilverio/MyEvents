@@ -1,3 +1,4 @@
+import { MagnifyingGlass } from "phosphor-react"
 import { Link } from "react-router-dom"
 
 import styles from "./style-header.module.css"
@@ -11,7 +12,12 @@ export function Header(){
             </h1>
 
             <form>
-                <input className={styles.searchBar} type="text" placeholder="Busque seu evento aqui" />       
+                <input 
+                    className={styles.searchBar} 
+                    type="text" 
+                    placeholder="Busque seu evento aqui"   
+                /> 
+                <MagnifyingGlass size={32} color="#F0ECA8"/>
             </form>
         </header>
     )

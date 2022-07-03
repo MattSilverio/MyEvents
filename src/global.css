@@ -1,7 +1,7 @@
 :root{
   --purple: #7862a3;
   --light-purple:#DDCCFF;
-  --pastel-purple: ##BFA7F0;
+  --pastel-purple: #BFA7F0;
 
   --yellow:#A39E52;
   --pastel-yellow: #F0ECA8;
@@ -13,4 +13,8 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+}
+
+body{
+  background-color: lightgray;
 }
