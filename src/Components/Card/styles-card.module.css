@@ -1,5 +1,21 @@
-/* .card{
-    width: 17rem;
+.card{
+    width: 18rem;
     height: 21rem;
     border: 1px solid black;
-} */
+    border-radius: 8px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    text-transform: capitalize;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}

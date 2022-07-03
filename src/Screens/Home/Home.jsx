@@ -7,26 +7,28 @@ import Img3 from '../../Assets/Images/img3.jpg'
 import Img4 from '../../Assets/Images/img4.jpg'
 import { Button } from '../../Components/Button/Button'
 import { Card } from '../../Components/Card/Card'
+import { useEffect, useState } from 'react'
+
+let i = 0
 
 export default function Home(){
-    const imgs = {
-        img1:{
-            url: Img1,
-            id: 0,
-        },
-        img2:{
-            url: Img2,
-            id: 1,
-        },
-        img3:{
-            url: Img3,
-            id: 2,
-        },
-        img4:{
-            url: Img4,
-            id: 3,
-        },
-    }
+    const imgs = [Img1, Img2, Img3, Img4]
+    const [imgSrc , setImgSrc] = useState(imgs[0])
+
+    useEffect(() =>{
+        setTimeout(() =>{
+            if(i === 4){
+                i = 0
+                setImgSrc(imgs[i]);
+                i++;
+            }else{
+                setImgSrc(imgs[i]);
+                i++;
+
+            }
+        }, 5000)
+    }, [imgSrc])
+    
 
     return (
         <>
@@ -43,7 +45,7 @@ export default function Home(){
                 </div>
 
                 <div className={styles.banner}>
-                    <img src={imgs.img1.url} />
+                    <img src={imgSrc} />
                 </div>    
             </section>
 
@@ -54,7 +56,11 @@ export default function Home(){
                 <h1>Seja no mundo físico, digital ou híbrido a gestão do seu negócio em um só lugar</h1>
             </div>
 
-            <Card title="eventos presenciais" description="A maior plataforma do Brasil para a venda de ingressos e gestão completa de eventos presenciais."/>
+            <div className={styles.containerCards}>
+                <Card title="eventos presenciais" description="A maior plataforma do Brasil para a venda de ingressos e gestão completa de eventos presenciais."/>
+                <Card title="eventos digitais" description="A maior plataforma do Brasil para a venda de ingressos e gestão completa de eventos digitais."/>
+                <Card title="eventos hibrídos" description="A maior plataforma do Brasil para a venda de ingressos e gestão completa de eventos hibrídos."/>
+            </div>
         </>
     )
 }
