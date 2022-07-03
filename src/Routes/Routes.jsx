@@ -14,7 +14,7 @@ export function Rts() {
           
           <Route element = {<Events/> }  path="/events" />
            
-           <Route element= {<Error />} path="/*" />
+           <Route element= {<Error />} path="*" />
        </Routes>
    )
 }
