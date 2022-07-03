@@ -13,7 +13,7 @@ export function Header(){
                 <Link to = "/">MyEvents</Link>
             </h1>
 
-           {location.pathname !== "/" && <form>
+           {location.pathname === "/events" && <form>
                 <input 
                     className={styles.searchBar} 
                     type="text" 

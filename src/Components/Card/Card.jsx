@@ -1,8 +1,9 @@
+import { useLocation } from 'react-router-dom'
 import { Button } from '../Button/Button'
 import styles from './styles-card.module.css'
 
 export function Card({title, imgSrc, description}){
-
+    const location = useLocation()
 
     return(
         <div className={styles.card}>
@@ -11,7 +12,7 @@ export function Card({title, imgSrc, description}){
             
             <p>{description}</p>
 
-            <Button content={"crie seu evento"}/>
+            {location.pathname !== '/events' ? <Button content={"crie seu evento"}/>  : <Button content={"inscrever"}/>}
         </div>      
     )
 }

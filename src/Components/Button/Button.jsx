@@ -6,6 +6,8 @@ export function Button({content}){
     
     if(content === "crie seu evento"){
         path = "/login"
+    }else if(content === "inscrever"){
+        path = '/inscricao'
     }
 
     return (
