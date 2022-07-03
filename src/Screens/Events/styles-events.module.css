@@ -6,3 +6,20 @@
     margin-top: 5rem;
     flex-wrap: wrap;
 }
+
+form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.searchBar{
+    height: 2rem;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 268px;
+    margin-right: 5px;
+}

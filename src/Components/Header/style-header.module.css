@@ -8,20 +8,20 @@
 }
 
 .logo a{
-    color: white;
+    color: var(--pastel-yellow);
     text-decoration: none;
 }
 
-form {
-    width: 300px;
+nav {
     display: flex;
+    align-items: space-between;
+    justify-content: center;
 }
 
-.searchBar{
-    height: 2rem;
-    border: none;
-    padding: 1rem;
-    border-radius: 8px;
-    width: 268px;
-    margin-right: 5px;
+nav a{
+    margin-left: 2rem;
+    color: var(--pastel-yellow);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1rem;
 }

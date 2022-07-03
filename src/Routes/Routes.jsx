@@ -6,11 +6,14 @@ import Events from "../Screens/Events/Events";
 import { Error } from "../Screens/Error/Error";
 
 
+
 export function Rts() {
    return(
        <Routes>
            <Route element= { <Home /> }  path="/"  />
-           <Route element = { <Events/> }  path="/events" />
+          
+          <Route element = {<Events/> }  path="/events" />
+           
            <Route element= {<Error />} path="/*" />
        </Routes>
    )

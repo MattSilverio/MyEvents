@@ -52,3 +52,6 @@ E Para rodar o projeto localmente:
    - useEffect para conectar a API e fazer o efeito de transições de imagem na main
    - useState para armazenar e manipular estados
    - useLocation para renderizar a barra de busca somente na rota "/events", definir o conteúdo dos links em relação a rota
+
+### Barra de Busca
+ - Filtragem pela cidade e data
