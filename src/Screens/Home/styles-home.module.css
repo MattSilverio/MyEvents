@@ -1,92 +1,99 @@
-.announcement{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    text-align: center;
-    gap: .5rem;
-    margin: 5rem 0;
-    background-color: #fff;
-    outline: 2px solid var(--pastel-yellow);
+.announcement {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+  margin: 5rem 0;
+  background-color: #fff;
+  outline: 2px solid var(--pastel-yellow);
 }
 
-.banner{
-    height: 28rem;
+.banner {
+  height: 28rem;
 }
 
-.banner img{
-    width: 100%;
-    height: 28rem;
+.banner img {
+  width: 100%;
+  height: 28rem;
 }
 
-.textAnouncement{
+.textAnouncement {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.textAnouncement h1::after {
+  content: "-";
+  background-color: #000;
+  width: 200px;
+  height: 20px;
+  animation: animate 1.5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.announcement + a {
+  display: block;
+  width: fit-content;
+  margin: auto;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+  margin: 5rem 0;
+}
+
+.containerCards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: space-between;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 720px) {
+  .announcement {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-}
-
-.textAnouncement h1::after{
-    content: "-";
-    background-color: #000;
-    width: 200px;
-    height: 20px;
-    animation: animate 1.5s linear infinite;
-}
-
-@keyframes animate{
-    0%{
-      opacity: 0;
-    }
-    50%{
-      opacity: 0.7;
-    }
-    100%{
-      opacity: 0;
-    }
   }
 
-.announcement + a{
-    display: block;
-    width: fit-content;
-    margin: auto;
-}
+  .text {
+    padding: 0.5rem;
+  }
 
-.text{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 2rem;
-    margin: 5rem 0;
-}
+  .banner{
+    width: 100%;
+  }
 
-.containerCards{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: space-between;
+  .textAnouncement {
+    height: 400px;
+    align-self: center;
     justify-content: center;
-    gap: 2rem;
-    margin-bottom: 5rem;
-}
-
-@media (max-width: 600px){
-    .announcement{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .textAnouncement{
-        height: 400px;
-        align-self: center;
-        justify-content: center;
-    }
+  }
 }
 
 @media (max-width: 970px) {
-    .containerCards{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 2rem;
-        margin-bottom: 5rem;
-    }
+  .containerCards {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 5rem;
+  }
 }
