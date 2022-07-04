@@ -12,12 +12,12 @@ import { useEffect, useState } from 'react'
 let i = 0
 
 export default function Home(){
-    const imgs = [Img1, Img2, Img3, Img4]
+    const imgs = [Img1, Img2, Img3, Img4] // pode ser o retorno de um objeto JSON de uma api
     const [imgSrc , setImgSrc] = useState(imgs[0])
 
     useEffect(() =>{
         setTimeout(() =>{
-            if(i === 4){
+            if(i === imgs.length + 1){
                 i = 0
                 setImgSrc(imgs[i]);
                 i++;
