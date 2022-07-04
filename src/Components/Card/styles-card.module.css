@@ -7,13 +7,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .title{
     text-transform: capitalize;
     text-align: center;
-    margin-top: 1rem;
+    
 }
 
 p{
@@ -24,10 +24,8 @@ p{
 .img{
     width: 18rem;
     height: 10rem;
-    margin-top: 3rem;
 }
 
 a{
     display: block;
-    margin-bottom: 1rem;
 }

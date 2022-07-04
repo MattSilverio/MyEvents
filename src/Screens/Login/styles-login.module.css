@@ -1,0 +1,55 @@
+.loginBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.userLogin{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 22rem;
+    height: 20rem;
+    gap: 10px;
+    border-radius: 8px;
+    background-color: var(--pastel-purple);
+}
+
+.title{
+    color: white;
+    position: absolute;
+    top: 1.5rem;
+}
+
+.formControl{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.formControl input{
+    border-radius: 8px;
+    border: none;
+    padding: 5px;
+    width: 12rem;
+}
+
+label{
+    color: var(--purple);
+    font-weight: bold; 
+}
+
+.submitButton{
+    position: absolute;
+    bottom: 2rem;
+    border: none;
+    border-radius: 8px;
+    background: var(--yellow);
+    padding: .5rem 1rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
