@@ -60,8 +60,33 @@
 
 .containerCards{
     display: flex;
+    flex-wrap: wrap;
     align-items: space-between;
     justify-content: center;
     gap: 2rem;
     margin-bottom: 5rem;
+}
+
+@media (max-width: 600px){
+    .announcement{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textAnouncement{
+        height: 400px;
+        align-self: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 970px) {
+    .containerCards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 5rem;
+    }
 }
