@@ -14,8 +14,9 @@ export function Header(){
         menuMobile = <div className={styles.menuMobile}>
         <XCircle size={32} color="white" onClick={() => setShowMenu(false)}/>
         <nav className={styles.navMobile}>
-            <Link to="/events">Eventos</Link>
-            <Link to="/login">Login</Link>
+            <Link to="/" onClick={() => setShowMenu(false)}>Início</Link>
+            <Link to="/events" onClick={() => setShowMenu(false)}>Eventos</Link>
+            <Link to="/login" onClick={() => setShowMenu(false)}>Login</Link>
         </nav>
     </div>
     }
@@ -29,6 +30,7 @@ export function Header(){
             <div>
                     <List size={32}  onClick={() => setShowMenu(!showMenu)}/>
                 <nav className={styles.nav}>
+                    <Link to="/">Início</Link>
                     <Link to="/events">Eventos</Link>
                     <Link to="/login">Login</Link>
                 </nav>
