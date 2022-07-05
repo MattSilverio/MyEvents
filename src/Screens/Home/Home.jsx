@@ -17,7 +17,7 @@ export default function Home(){
 
     useEffect(() =>{
         setTimeout(() =>{
-            if(i === imgs.length + 1){
+            if(i === imgs.length){
                 i = 0
                 setImgSrc(imgs[i]);
                 i++;
