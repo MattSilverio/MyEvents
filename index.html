@@ -461,24 +461,25 @@
 <ul>
 <li>Componente para gerenciamento de rotas</li>
 </ul>
-<p>```
-  import React from "react";
-import { Route, Routes } from "react-router-dom";</p>
-<p>import Home from "../Screens/Home/Home";
-import Events from "../Screens/Events/Events";
-import { Error } from "../Screens/Error/Error";
-import { Login } from "../Screens/Login/Login";</p>
-<p>export function Rts() {
+<pre><code>import React from &quot;react&quot;;
+import { Route, Routes } from &quot;react-router-dom&quot;;
+
+import Home from &quot;../Screens/Home/Home&quot;;
+import Events from &quot;../Screens/Events/Events&quot;;
+import { Error } from &quot;../Screens/Error/Error&quot;;
+import { Login } from &quot;../Screens/Login/Login&quot;;
+
+export function Rts() {
    return(
-       <Routes>
-            <Route element= { \<Home /> }  path="/"  />
-            <Route element ={\<Events/> }  path="/events" />
-            <Route element={\<Login />} path="/login" />
-            <Route element={\<Error />} path="*" />
-       </Routes>
+       &lt;Routes&gt;
+            &lt;Route element= { &lt;Home /&gt; }  path=&quot;/&quot;  /&gt;
+            &lt;Route element ={&lt;Events/&gt; }  path=&quot;/events&quot; /&gt;
+            &lt;Route element={&lt;Login /&gt;} path=&quot;/login&quot; /&gt;
+            &lt;Route element={&lt;Error /&gt;} path=&quot;*&quot; /&gt;
+       &lt;/Routes&gt;
    )
-}</p>
-<p>```</p>
+}
+</code></pre>
 <h3 id="uso-de-hooks">Uso de Hooks</h3>
 <p><br></p>
 <ul>
@@ -498,7 +499,7 @@ export function Home(){
 
    useEffect(() =&gt;{
         setTimeout(() =&gt;{
-            if(i === imgs.length + 1){
+            if(i === imgs.length ){
                 i = 0
                 setImgSrc(imgs[i]);
                 i++;
