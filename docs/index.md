@@ -57,8 +57,8 @@ E Para rodar o projeto localmente:
 
   - Componente para gerenciamento de rotas
   
-  ```
-  import React from "react";
+```
+import React from "react";
 import { Route, Routes } from "react-router-dom";
 
 import Home from "../Screens/Home/Home";
@@ -76,9 +76,7 @@ export function Rts() {
        </Routes>
    )
 }
-
-
-  ```
+```
 
 ### Uso de Hooks
 <br>
@@ -100,7 +98,7 @@ export function Home(){
 
    useEffect(() =>{
         setTimeout(() =>{
-            if(i === imgs.length + 1){
+            if(i === imgs.length ){
                 i = 0
                 setImgSrc(imgs[i]);
                 i++;
